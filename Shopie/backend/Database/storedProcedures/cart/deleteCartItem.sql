@@ -1,0 +1,7 @@
+CREATE OR ALTER PROCEDURE deleteCartItem(
+@productID VARCHAR(200)
+)
+AS
+BEGIN
+DELETE FROM cart WHERE productID=@productID
+END

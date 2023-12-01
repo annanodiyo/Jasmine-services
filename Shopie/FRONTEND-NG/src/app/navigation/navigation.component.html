@@ -1,0 +1,33 @@
+<div class="sticky top-0 z-50 px-10 py-4 bg-[#95714b]">
+  <nav class="flex justify-between items-center mx-auto">
+    <div class="flex space-x-4">
+      <a
+        routerLink="/"
+        routerLinkActive="active-link"
+        class="hover:text-white font-normal"
+        >Home</a
+      >
+    </div>
+
+    <div class="flex space-x-4">
+      <a *ngIf="!logIn"
+        routerLink="/login"
+        routerLinkActive="active-link"
+        class="hover:text-orange-500 font-bold rounded-md px-4 py-2"
+        >Login</a
+      >
+      <a *ngIf="logIn"
+        routerLink="/login"
+        routerLinkActive="active-link"
+        class="hover:text-orange-500 font-bold rounded-md px-4 py-2"
+        (click)="logOut()" >Logout</a
+      >
+      <a
+        routerLink="/register"
+        routerLinkActive="active-link"
+        class="hover:text-white font-bold hover:bg-black border-solid border-2 border-black rounded-md px-4 py-2"
+        >SignUp</a
+      >
+    </div>
+  </nav>
+</div>

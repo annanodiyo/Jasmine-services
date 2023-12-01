@@ -1,0 +1,152 @@
+###
+POST http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+    "firstname": "perez",
+    "lastname": "Odiyo",
+    "email": "perezodiyo092@gmail.com",
+    "password": "User@123!"
+}
+
+###
+POST http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+    "firstname": "Stephen",
+    "lastname": "Ondieki",
+    "email": "ondiekistephen00@gmail.com",
+    "password": "Admin@123"
+}
+###
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+   "email": "ondiekistephen00@gmail.com",
+    "password": "Admin@123"
+}
+###
+GET http://localhost:3000/user/all
+Content-Type: application/json
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjllOTJmYWZhLTBhZDMtNGE5Yy05ZGVkLTQ0MDZiM2YzMDEwZiIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDExOTIyNzgsImV4cCI6MTcwMTIyNjI3OH0.NORACoSo_QZ-cpMfx_9gzDEYzV6AL07CfogpPG92Lsw
+###
+GET http://localhost:3000/user/reset?email=ondiekistephen00@gmail.com
+###
+PUT http://localhost:3000/user/update/ed8096dc-2b9d-4455-b650-d5640090d2f8
+Content-Type: application/json
+
+{
+    "firstname": "annan",
+    "lastname": "annan",
+    "email": "annan1@gmail.com",
+    "password":"123445jefvd"
+  
+}
+###
+GET http://localhost:3000/user/one/00a8aad8-0627-4f88-afc8-c3dacb334fa3
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjllOTJmYWZhLTBhZDMtNGE5Yy05ZGVkLTQ0MDZiM2YzMDEwZiIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDExOTIyNzgsImV4cCI6MTcwMTIyNjI3OH0.NORACoSo_QZ-cpMfx_9gzDEYzV6AL07CfogpPG92Lsw
+###
+GET http://localhost:3000/user/logged/
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjllOTJmYWZhLTBhZDMtNGE5Yy05ZGVkLTQ0MDZiM2YzMDEwZiIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDExOTIyNzgsImV4cCI6MTcwMTIyNjI3OH0.NORACoSo_QZ-cpMfx_9gzDEYzV6AL07CfogpPG92Lsw
+###
+POST http://localhost:3000/products/new
+Content-Type: application/json
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjllOTJmYWZhLTBhZDMtNGE5Yy05ZGVkLTQ0MDZiM2YzMDEwZiIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDEyMDI3MjEsImV4cCI6MTcwMTIzNjcyMX0.bNmpYAsVqwgUUch3I_26u6gmU4nj4uiwwPllP3FxhzY
+
+{
+    "id":"1",
+    "productName":"Woofer ",
+    "productDescription":"Sayona Make Black",
+     "price":200000,
+     "productImageUrl":"tdedudsudsid",
+     "category":"Electronics",
+     "productStock":4
+}
+###
+GET http://localhost:3000/user/one/ed8096dc-2b9d-4455-b650-d5640090d2f8
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZlMGYxYzliLTIyNWMtNGQ3YS1hZTI5LWI4NTdmNTQ1N2RjNyIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlzRGVsZXRlZCI6MCwiaWF0IjoxNzAxMDc0MTkyLCJleHAiOjE3MDExMDgxOTJ9.I1kH63zfoBudVROeCh-AsWcHjRvMHtZ579oGpFl26eg
+###
+GET http://localhost:3000/products/all
+###
+GET http://localhost:3000/products/category/coffee
+###
+GET http://localhost:3000/products/one/17a23f53-0dba-4474-8213-e24ecae1a86b
+###
+PUT http://localhost:3000/products/17a23f53-0dba-4474-8213-e24ecae1a86b
+Content-Type: application/json
+
+{
+    
+    "productName":"",
+    "productDescription":"dormans",
+    "price":444,
+    "productImageUrl":"tdedudsudsid",
+    "category":"coffee",
+    "productStock":24
+}
+###
+DELETE  http://localhost:3000/products/17a23f53-0dba-4474-8213-e24ecae1a86b
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZlMGYxYzliLTIyNWMtNGQ3YS1hZTI5LWI4NTdmNTQ1N2RjNyIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlzRGVsZXRlZCI6MCwiaWF0IjoxNzAxMDAyNzIzLCJleHAiOjE3MDEwMDYzMjN9.lvKpWlMVxL-s7shNDtiOEQNps2NUUVG4j-tsVDDhHuA
+###
+GET http://localhost:3000/products/search?q=coffeeMaker
+Content-Type:application/json
+
+###
+GET http://localhost:3000/cart
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjllOTJmYWZhLTBhZDMtNGE5Yy05ZGVkLTQ0MDZiM2YzMDEwZiIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDEyMDI3MjEsImV4cCI6MTcwMTIzNjcyMX0.bNmpYAsVqwgUUch3I_26u6gmU4nj4uiwwPllP3FxhzY
+###
+POST http://localhost:3000/cart
+Content-Type: application/json
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjllOTJmYWZhLTBhZDMtNGE5Yy05ZGVkLTQ0MDZiM2YzMDEwZiIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDEyMDI3MjEsImV4cCI6MTcwMTIzNjcyMX0.bNmpYAsVqwgUUch3I_26u6gmU4nj4uiwwPllP3FxhzY
+
+{
+    "productID":"368d0cfb-b0a0-4bb5-b905-8ef65973cab3"
+}
+###
+DELETE http://localhost:3000/cart/f47bdb6c-c7b1-48f1-8139-466aa4e38519
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyY2Q1Yzk4LTMzY2QtNGI4Zi04NjUyLTcyODM2ZTQxYTllZiIsImZpcnN0bmFtZSI6IkVyaWMiLCJsYXN0bmFtZSI6Ikt5YWxvIiwiZW1haWwiOiJlcmlja3lhbG9AZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJpc0RlbGV0ZWQiOjAsImlzV2VsY29tZWQiOjAsImlhdCI6MTcwMTI2NDg3MiwiZXhwIjoxNzAxMjk4ODcyfQ.Lq5zX2MZJp-4lROD3oo92zB8m1CfPN6-MEq1V7Aesgs
+###
+DELETE  http://localhost:3000/cart
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImZlMGYxYzliLTIyNWMtNGQ3YS1hZTI5LWI4NTdmNTQ1N2RjNyIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSIsInJvbGUiOiJhZG1pbiIsImlzRGVsZXRlZCI6MCwiaWF0IjoxNzAxMDAyNzIzLCJleHAiOjE3MDEwMDYzMjN9.lvKpWlMVxL-s7shNDtiOEQNps2NUUVG4j-tsVDDhHuA
+###
+PATCH http://localhost:3000/cart/500ccdde-4a57-4b6f-a5df-56626401c849
+Content-Type: application/json
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjllOTJmYWZhLTBhZDMtNGE5Yy05ZGVkLTQ0MDZiM2YzMDEwZiIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDEyMDI3MjEsImV4cCI6MTcwMTIzNjcyMX0.bNmpYAsVqwgUUch3I_26u6gmU4nj4uiwwPllP3FxhzY
+
+{
+    "quantity":5
+}
+
+###
+GET http://localhost:3000/order/2ad98f50-b3f1-4ff5-9b1c-56e9824f36e7
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjllOTJmYWZhLTBhZDMtNGE5Yy05ZGVkLTQ0MDZiM2YzMDEwZiIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDEyMDI3MjEsImV4cCI6MTcwMTIzNjcyMX0.bNmpYAsVqwgUUch3I_26u6gmU4nj4uiwwPllP3FxhzY
+###
+POST http://localhost:3000/order/new
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjllOTJmYWZhLTBhZDMtNGE5Yy05ZGVkLTQ0MDZiM2YzMDEwZiIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDEyMDI3MjEsImV4cCI6MTcwMTIzNjcyMX0.bNmpYAsVqwgUUch3I_26u6gmU4nj4uiwwPllP3FxhzY
+
+###
+GET http://localhost:3000/order/all
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjllOTJmYWZhLTBhZDMtNGE5Yy05ZGVkLTQ0MDZiM2YzMDEwZiIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDEyMDI3MjEsImV4cCI6MTcwMTIzNjcyMX0.bNmpYAsVqwgUUch3I_26u6gmU4nj4uiwwPllP3FxhzY
+
+###
+GET http://localhost:3000/order/status
+Content-Type: application/json
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRjYjJmZGMyLTc4YTMtNGViMy1hZjI5LWQyNzllZDBlMjNhNSIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDExMDMxNjEsImV4cCI6MTcwMTEzNzE2MX0.97VeRxXkGShn-9NmanJKb_U_pwSs5-7UFdvYpP46LfQ
+
+{
+    "id":"0708bc67-ef97-468e-8496-aaddf9a7fd1e",
+    "status":"processing"
+}
+###
+PUT http://localhost:3000/order/status/shipping/6424248a-711a-4df6-8d42-4f5057d2bc7e
+Content-Type: application/json
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRjYjJmZGMyLTc4YTMtNGViMy1hZjI5LWQyNzllZDBlMjNhNSIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDExMDMxNjEsImV4cCI6MTcwMTEzNzE2MX0.97VeRxXkGShn-9NmanJKb_U_pwSs5-7UFdvYpP46LfQ
+###
+PUT http://localhost:3000/order/status/shipped/6424248a-711a-4df6-8d42-4f5057d2bc7e
+Content-Type: application/json
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRjYjJmZGMyLTc4YTMtNGViMy1hZjI5LWQyNzllZDBlMjNhNSIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDExMDMxNjEsImV4cCI6MTcwMTEzNzE2MX0.97VeRxXkGShn-9NmanJKb_U_pwSs5-7UFdvYpP46LfQ
+###
+GET http://localhost:3000/order/user
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjllOTJmYWZhLTBhZDMtNGE5Yy05ZGVkLTQ0MDZiM2YzMDEwZiIsImZpcnN0bmFtZSI6IlN0ZXBoZW4iLCJsYXN0bmFtZSI6Ik9uZGlla2kiLCJlbWFpbCI6Im9uZGlla2lzdGVwaGVuMDBAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaXNEZWxldGVkIjowLCJpc1dlbGNvbWVkIjowLCJpYXQiOjE3MDEyNTI0MzUsImV4cCI6MTcwMTI4NjQzNX0.Ow_MLghfFX-L_he1t674l8iIYo0ZdWNGULPvtuBeJe8
